@@ -83,9 +83,9 @@ header .navbar{
     justify-content: space-between;
 }
 .navbar .nav-logo .logo-text{
+    font-size: var(--font-size-xxl);
     color: var(--white-color);
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-semibold);
+    font-family: "Miniver", sans-serif;
 }
 .navbar .nav-menu{
     display: flex;
