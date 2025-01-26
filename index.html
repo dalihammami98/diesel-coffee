@@ -303,10 +303,10 @@
                         <p><a href="https://www.google.com/maps/place/The+Diesel/@35.1676597,8.8309919,14z/data=!4m16!1m9!3m8!1s0x12f93e03277f3b3d:0x9165782c2e6df471!2sKasserine!3b1!8m2!3d35.1722716!4d8.8307626!10e5!16zL20vMDkxeXgx!3m5!1s0x12f915f74c67732f:0xc72326110b1a846b!8m2!3d35.1676722!4d8.8310178!16s%2Fg%2F11f3zmnz6n?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D">localisation</a></p>
                     </li>
                 </ul>
-                <form action="#" class="contact-form">
-                    <input type="text" placeholder="Your name" class="form-input" id="name" required>
-                    <input type="email" placeholder="Your email" class="form-input" id="email" required>
-                    <textarea placeholder="Your message" class="form-input" id="message" required></textarea>
+                <form class="contact-form" method="POST" action="admin.php">
+                    <input type="text" placeholder="Your name" class="form-input" id="name" name="name" required>
+                    <input type="email" placeholder="Your email" class="form-input" id="email" name="email" required>
+                    <textarea placeholder="Your message" class="form-input" id="message" name="message" required></textarea>
                     <button class="submit-button" onclick="verif()">Submit</button>
                 </form>
             </div>
