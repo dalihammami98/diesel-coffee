@@ -1,3 +1,39 @@
+function alpha(ch) {
+          ch=ch.toUpperCase();
+          i=0
+          while(ch.charAt(i)>='A' && ch.charAt(i)<='Z' && i<ch.length )
+            i ++;
+          return i ==ch.length;
+
+}
+function verif() {
+  var Name=document.getElementById('name').value;
+  var Email=document.getElementById('email').value;
+  var Message=document.getElementById('message').value;
+  var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if(Name===""){
+    alert("Le champ Name est obligatoire. Veuillez le remplir");
+    return;
+  }
+  else if (!alpha(Name)) {
+    alert("Le champ  Name est obligatoirement une chaine de caractére.")
+    return;
+
+    }
+    else if (Email === "") {
+    alert("Le champ Email est obligatoire. Veuillez le remplir.");
+    return;
+    }
+    else if (!regexEmail.test(Email)) {
+    alert("Veuillez saisir une adresse e-mail valide.");
+    return;
+    }
+    else if (Message === "") {
+    alert("Le champ Message est obligatoire. Veuillez le remplir.");
+    return;
+    }
+}
+
 const navLinks = document.querySelectorAll(".nav-menu .nav-link");
 const menuOpenButton = document.querySelector("#menu-open-button");
 const menuCloseButton = document.querySelector("#menu-close-button");
