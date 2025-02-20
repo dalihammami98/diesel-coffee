@@ -107,14 +107,14 @@ header .navbar{
 }
 .hero-section{
     min-height: 100vh;
-    background: var(--primary-color);
 }
 .hero-section .section-content{
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
     color: var(--white-color);
     justify-content: space-between;
+    margin-top: -50%;
 }
 .hero-section .hero-details .title{
     font-size: var(--font-size-xxl);
@@ -143,6 +143,7 @@ header .navbar{
     display: flex;
     gap: 23px;
     padding-top: 20px;
+    margin-bottom: 30px;
 }
 .hero-section .hero-details .button{
     padding: 7px 32px;
@@ -161,7 +162,7 @@ header .navbar{
 .hero-section .hero-image-wrapper{
     max-width: 500px;
     margin-right: 30px;
-  
+    
 }
 .about-section{
     padding: 120px 0;
